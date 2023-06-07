@@ -50,9 +50,9 @@ const Budget = () => {
 
         <div className="input-group d-flex justify align-items-center">
          <span id="budget-box" className="mx-4">Budget</span>   
-  <input type="text" className="form-control" placeholder= '' value= { `£ ${budgetchange}` } onChange={ onChange } aria-label="Recipient's username with two button addons" />
-  <button className="btn btn-outline-secondary" type="button" onClick={onPlus}  >+</button>
-  <button className="btn btn-outline-secondary" type="button" onClick={onMinus} >-</button>
+  <input type="text" className="form-control" placeholder= '' value= { `£ ${budgetchange}` } onChange={ onChange } aria-label="Recipient's username with two button addons" style={ {height: "57px"} }  />
+  <button className="btn btn-outline-secondary" type="button" onClick={onPlus} style={ {height: "57px", background: "#c4ffc4", color: "black", border: "1px solid transparent"} } >+</button>
+  <button className="btn btn-outline-secondary" type="button" onClick={onMinus} style={ {height: "57px", background: "#ffdede", color: "black", border: "1px solid transparent"} }  >-</button>
 </div>
 
         // <div className='alert alert-secondary'>
