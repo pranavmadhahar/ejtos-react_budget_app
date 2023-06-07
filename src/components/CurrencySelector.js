@@ -5,19 +5,18 @@ import { AppContext } from '../context/AppContext';
 
 const CurrencySelector = () => {
 
-  const { dispatch } = useContext(AppContext);
-  const [currency, setcurrency] = useState(" £ Pound ")
+  const { dispatch, currency } = useContext(AppContext);
+  
 
+  
   const handleclick = (e) => {
-
-    const newCurrency = { currency: e.target.value }
     
-    dispatch({
+   return  dispatch({
       type: "CHG_CURRENCY",
-      payload: newCurrency
+      payload: e.target.innerHTML
     });
 
-    setcurrency(e.target.innerHTML);
+    
   }
 
   return (
