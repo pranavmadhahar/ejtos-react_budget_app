@@ -15,7 +15,6 @@ const CurrencySelector = () => {
       type: "CHG_CURRENCY",
       payload: e.target.innerHTML
     });
-
     
   }
 
